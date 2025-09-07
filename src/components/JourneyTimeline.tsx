@@ -228,7 +228,7 @@ const JourneyTimeline = () => {
                 </div>
 
                 {/* Timeline Node */}
-                <motion.div
+                {/* <motion.div
                   className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 -translate-x-1/2 z-10 top-4 md:top-auto"
                   variants={nodeVariants}
                   transition={{ duration: 0.9, delay: index * 0.05 + 0.2 }}
@@ -237,7 +237,7 @@ const JourneyTimeline = () => {
                   <div className={`w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-gradient-to-r ${step.color} rounded-full flex items-center justify-center shadow-2xl border-3 sm:border-4 border-white/30`}>
                   </div>
 
-                </motion.div>
+                </motion.div> */}
 
                 {/* Empty space for the other side - only on desktop */}
                 <div className="hidden md:block md:w-5/12"></div>

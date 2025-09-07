@@ -46,7 +46,7 @@ const OurStory = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <Heart className="h-12 w-12 text-blue-200 mx-auto mb-6" />
+          {/* <Heart className="h-12 w-12 text-blue-200 mx-auto mb-6" /> */}
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-serif">
             Our Love Story
           </h2>
@@ -123,7 +123,7 @@ const OurStory = () => {
           <div className="bg-gradient-to-br from-blue-50 to-blue-100/70 rounded-2xl p-8">
             <div className="flex items-center justify-center mb-6">
               <div className="w-16 h-0.5 bg-blue-300"></div>
-              <Heart className="h-8 w-8 text-blue-500 mx-4" />
+              {/* <Heart className="h-8 w-8 text-blue-500 mx-4" /> */}
               <div className="w-16 h-0.5 bg-blue-300"></div>
             </div>
             <p className="text-xl md:text-2xl text-blue-800 font-serif italic mb-4">
@@ -147,9 +147,9 @@ const OurStory = () => {
             Dan sekarang, kami siap memulai babak baru kehidupan bersama
           </p>
           <div className="flex items-center justify-center space-x-2">
-            <Heart className="h-6 w-6 text-red-500 animate-pulse" />
+            {/* <Heart className="h-6 w-6 text-red-500 animate-pulse" /> */}
             <span className="text-white font-semibold text-lg">Forever Together</span>
-            <Heart className="h-6 w-6 text-red-500 animate-pulse" />
+            {/* <Heart className="h-6 w-6 text-red-500 animate-pulse" /> */}
           </div>
         </motion.div>
       </div>

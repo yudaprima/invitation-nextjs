@@ -140,7 +140,7 @@ const BrideGroom = () => {
         </div>
 
         {/* Love Quote */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
@@ -148,18 +148,18 @@ const BrideGroom = () => {
           className="text-center mt-16"
         >
           <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl p-8 text-white">
-            {/* <Heart className="h-12 w-12 mx-auto mb-6 text-blue-200" /> */}
+           
             <p className="text-xl md:text-2xl font-serif italic mb-4">
               "Cinta sejati adalah ketika dua hati bersatu dalam satu tujuan,
               menuju ridha Allah SWT"
             </p>
             <div className="flex items-center justify-center space-x-4 mt-6">
               <div className="w-12 h-0.5 bg-blue-300"></div>
-              {/* <Heart className="h-6 w-6 text-blue-200" /> */}
+             
               <div className="w-12 h-0.5 bg-blue-300"></div>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

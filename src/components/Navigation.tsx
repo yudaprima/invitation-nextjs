@@ -49,7 +49,7 @@ const Navigation = () => {
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-2"
           >
-            <Heart className="h-8 w-8 text-blue-600" />
+            {/* <Heart className="h-8 w-8 text-blue-600" /> */}
             <span className="text-xl font-bold text-blue-900">
               L & C
             </span>
