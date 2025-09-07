@@ -54,7 +54,7 @@ const LandingPage = ({ onEnter }: LandingPageProps) => {
       <div className="relative z-10 min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
         <div className="text-center text-white max-w-4xl mx-auto w-full">
           {/* Islamic Ornament */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
@@ -65,7 +65,7 @@ const LandingPage = ({ onEnter }: LandingPageProps) => {
               <div className="absolute inset-2 border-2 border-white/50 rounded-full"></div>
               <Heart className="absolute inset-0 m-auto h-8 w-8 text-white" />
             </div>
-          </motion.div>
+          </motion.div> */}
 
           {/* Bismillah */}
           <motion.div
@@ -104,7 +104,7 @@ const LandingPage = ({ onEnter }: LandingPageProps) => {
             transition={{ duration: 1, delay: 0.9 }}
             className="mb-8"
           >
-            <h1 className="text-3xl italic sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 font-serif leading-tight">
+            <h1 className="text-3xl italic sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 font-serif leading-tight">
               Lufi & Chandra
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-blue-200 mb-6">

@@ -137,13 +137,13 @@ export default function InvitationPage() {
         <div className="absolute inset-0 bg-white/5 backdrop-blur-sm"></div>
         <div className="relative z-10">
           <p className="text-blue-200 text-lg">
-            Made with ❤️ for Lufi & Chandra's special day
+            Terima kasih sudah merayakan cinta kami
           </p>
-          <div className="mt-4 flex items-center justify-center space-x-2">
+          {/* <div className="mt-4 flex items-center justify-center space-x-2">
             <Heart className="h-5 w-5 text-pink-400 animate-pulse" />
             <span className="text-blue-300 text-sm">Forever Together</span>
             <Heart className="h-5 w-5 text-pink-400 animate-pulse" />
-          </div>
+          </div> */}
         </div>
       </footer>
     </div>

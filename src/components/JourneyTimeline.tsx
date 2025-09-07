@@ -2,7 +2,6 @@
 
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
-import { Heart, Star, Sparkles, MapPin } from 'lucide-react';
 import CinematicTransition from './CinematicTransition';
 import FloatingFlowers from './FloatingFlowers';
 
@@ -21,7 +20,6 @@ const JourneyTimeline = () => {
       year: '2020',
       title: 'Pertemuan',
       description: 'Awal pertemuan kami di bangku sma.',
-      icon: Heart,
       color: 'from-blue-400/80 via-blue-500/80 to-blue-600/80',
       image: '/UW20250811320_01cb7f886f89e9d5028ccd4170e05c45-e1755759503178.webp',
       position: 'left'
@@ -30,7 +28,6 @@ const JourneyTimeline = () => {
       year: '2021',
       title: 'Perjalanan Cinta',
       description: 'Perjalanan panjang penuh doa harapan dan perjuangan yg akhirnya membawa kami pada 25 mei 2025.',
-      icon: Star,
       color: 'from-blue-400/80 via-blue-500/80 to-blue-600/80',
       image: '/UW20250811320_10a5e6a802736d6b315019933d8c0444-scaled.webp',
       position: 'right'
@@ -39,7 +36,6 @@ const JourneyTimeline = () => {
       year: '2023',
       title: 'Janji Suci',
       description: 'Kini dgn syukur yg tak terhingga kami siap melangkah menuju hari bahagia saat janji suci pernikahan pada 21 september 2025.',
-      icon: Sparkles,
       color: 'from-blue-400/80 via-blue-500/80 to-blue-600/80',
       image: '/UW20250811320_15d89cbb31158d13b4596f61384ec86f.webp',
       position: 'left'
@@ -48,7 +44,6 @@ const JourneyTimeline = () => {
       year: '2025',
       title: 'Ikatan Selamanya',
       description: 'Perjalanan cinta yang indah akan mencapai puncaknya. Dua jiwa akan bersatu dalam ikatan suci pernikahan, memulai babak baru kehidupan.',
-      icon: MapPin,
       color: 'from-blue-400/80 via-blue-500/80 to-blue-600/80',
       image: '/UW20250811320_772a8c03c13acb3adbe4dadd207d78f7-scaled.webp',
       position: 'right'
@@ -99,7 +94,7 @@ const JourneyTimeline = () => {
         {/* Section Header */}
         <CinematicTransition delay={0.05} direction="fade" duration={0.8} viewportAmount={0} viewportMargin={'400px 0px 400px 0px'}>
           <div className="text-center mb-12 sm:mb-16 md:mb-20">
-            <motion.div
+            {/* <motion.div
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
               transition={{ duration: 0.8, delay: 0.1 }}
@@ -110,9 +105,9 @@ const JourneyTimeline = () => {
               <div className="absolute inset-2 bg-blue-900/20 rounded-full flex items-center justify-center">
                 <Heart className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 text-blue-300" />
               </div>
-            </motion.div>
+            </motion.div> */}
 
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 font-serif leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 sm:mb-6 font-serif leading-tight">
               <span className="bg-gradient-to-r from-blue-300 via-blue-400 to-blue-500 bg-clip-text text-transparent">
                 Our Journey
               </span>
@@ -180,8 +175,7 @@ const JourneyTimeline = () => {
 
           {/* Journey Steps */}
           {journeySteps.map((step, index) => {
-            const Icon = step.icon;
-            const isLeft = step.position === 'left';
+                    const isLeft = step.position === 'left';
 
             return (
               <motion.div
@@ -241,15 +235,8 @@ const JourneyTimeline = () => {
                   viewport={{ once: true }}
                 >
                   <div className={`w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 bg-gradient-to-r ${step.color} rounded-full flex items-center justify-center shadow-2xl border-3 sm:border-4 border-white/30`}>
-                    <Icon className="h-6 w-6 sm:h-7 sm:w-7 md:h-8 md:w-8 text-white" />
                   </div>
 
-                  {/* Pulse Effect */}
-                  <motion.div
-                    className={`absolute inset-0 bg-gradient-to-r ${step.color} rounded-full`}
-                    animate={{ scale: [1, 1.5, 1], opacity: [0.5, 0, 0.5] }}
-                    transition={{ duration: 3, repeat: Infinity }}
-                  />
                 </motion.div>
 
                 {/* Empty space for the other side - only on desktop */}
@@ -263,7 +250,7 @@ const JourneyTimeline = () => {
         {/* Final Message */}
         <CinematicTransition delay={1} direction="scale">
           <div className="text-center mt-20">
-            <motion.div
+            {/* <motion.div
               animate={{ rotate: 360 }}
               transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
               className="w-16 h-16 mx-auto mb-6"
@@ -271,9 +258,9 @@ const JourneyTimeline = () => {
               <Heart className="h-16 w-16 text-pink-400" />
             </motion.div>
 
-            <h3 className="text-4xl font-bold text-white mb-4 font-serif">
+            <h3 className="text-3xl font-bold text-white mb-4 font-serif">
               Dan Perjalanan Berlanjut...
-            </h3>
+            </h3> */}
             <p className="text-xl text-blue-200 max-w-2xl mx-auto">
               Setiap akhir adalah awal yang baru. Perjalanan cinta kami akan terus berlanjut
               dalam ikatan suci pernikahan, menuju kebahagiaan yang abadi.

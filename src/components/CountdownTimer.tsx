@@ -77,7 +77,7 @@ const CountdownTimer = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-serif">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-serif">
             <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
               Countdown to Our Big Day
             </span>
@@ -102,7 +102,7 @@ const CountdownTimer = () => {
                 initial={{ scale: 1.2, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.3 }}
-                className="text-4xl md:text-5xl font-bold mb-2"
+                className="text-3xl md:text-4xl font-bold mb-2"
               >
                 {unit.value.toString().padStart(2, '0')}
               </motion.div>

@@ -6,16 +6,6 @@ import { Calendar, Clock, MapPin, Phone, Mail, Car } from 'lucide-react';
 const WeddingDetails = () => {
   const events = [
     {
-      title: 'Akad Nikah',
-      date: '21 September 2025',
-      time: '09:00 WIB - 10:30 WIB',
-      location: 'Baliantoro Villa',
-      address: 'Jl. Padma No.4, Karang Moko, Sariharjo, Kec. Ngaglik, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55581',
-      description: 'Ijab kabul dan prosesi akad nikah yang sakral',
-      icon: '🕌',
-      mapUrl: 'https://www.google.com/maps/place/Baliantoro+Villa/@-7.7373904,110.371037,17z/data=!3m1!4b1!4m9!3m8!1s0x2e7a58e680d8784b:0xa44073f65617abd4!5m2!4m1!1i2!8m2!3d-7.7373904!4d110.371037!16s%2Fg%2F11c7p6v_2m?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D'
-    },
-    {
       title: 'Resepsi Pernikahan',
       date: '21 September 2025',
       time: '11:00 WIB - 13:00 WIB',
@@ -66,7 +56,7 @@ const WeddingDetails = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-serif">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-serif">
             <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
 
               Wedding Details
@@ -78,7 +68,7 @@ const WeddingDetails = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-1 container mx-auto gap-8 mb-16">
           {events.map((event, index) => (
             <motion.div
               key={event.title}
@@ -89,7 +79,7 @@ const WeddingDetails = () => {
               className="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 border border-white/20 hover:bg-white/15"
             >
               <div className="text-center mb-6">
-                <div className="text-4xl mb-4">{event.icon}</div>
+                <div className="text-3xl mb-4">{event.icon}</div>
                 <h3 className="text-2xl font-bold text-white mb-2">
                   {event.title}
                 </h3>
@@ -145,7 +135,7 @@ const WeddingDetails = () => {
         </div>
 
         {/* Contact Information */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -185,7 +175,7 @@ const WeddingDetails = () => {
               </div>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* Transportation Info */}
         <motion.div

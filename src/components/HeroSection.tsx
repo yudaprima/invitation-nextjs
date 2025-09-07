@@ -52,7 +52,7 @@ const HeroSection = () => {
           </motion.div> */}
 
           {/* Typewriter Names - Only once */}
-          <div className="text-4xl sm:text-5xl italic md:text-6xl lg:text-7xl font-bold mb-6 font-serif">
+          <div className="text-3xl sm:text-3xl italic md:text-4xl lg:text-6xl font-bold mb-6 font-serif">
             <TypewriterText
               texts={['Lufi & Chandra']}
               className="bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent"
