@@ -7,7 +7,7 @@ import FloatingFlowers from './FloatingFlowers';
 
 const BrideGroom = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-800/70 to-blue-600/70 relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-blue-100 to-blue-300 relative overflow-hidden">
       {/* Floating Flowers */}
       {/* <FloatingFlowers density="light" colors={['text-pink-300/20', 'text-purple-300/15', 'text-blue-300/15', 'text-white/10']} /> */}
 
@@ -30,11 +30,11 @@ const BrideGroom = () => {
           </div> */}
           {/* <Heart className="h-12 w-12 text-pink-400 mx-auto mb-6" /> */}
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-serif">
-            <span className="bg-gradient-to-r italic from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r italic from-blue-300 via-blue-400 to-blue-500 bg-clip-text text-transparent">
               Bride & Groom
             </span>
           </h2>
-          <p className="text-blue-200 text-lg max-w-2xl mx-auto">
+          <p className="text-blue-400 text-lg max-w-2xl mx-auto">
             Dua insan yang dipersatukan dalam ikatan suci pernikahan
           </p>
         </motion.div>

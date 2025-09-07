@@ -66,7 +66,7 @@ const CountdownTimer = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-800/70 to-blue-600/70 relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-blue-400/50 to-blue-300/50  relative overflow-hidden">
       {/* Floating Flowers */}
       {/* <FloatingFlowers density="light" colors={['text-pink-300/20', 'text-purple-300/25', 'text-blue-300/15', 'text-white/10']} /> */}
 
@@ -95,7 +95,7 @@ const CountdownTimer = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl p-6 text-white shadow-xl"
+              className="bg-gradient-to-br from-blue-200 to-blue-300 rounded-2xl p-6 text-white shadow-xl"
             >
               <motion.div
                 key={unit.value}

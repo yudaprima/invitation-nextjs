@@ -8,7 +8,7 @@ import TypewriterText from './TypewriterText';
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-800/70 to-blue-600/70">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-100 to-blue-300">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -19,9 +19,9 @@ const HeroSection = () => {
           priority
         />
         {/* Subtle soft-blue overlay to darken image for readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-950/60 via-blue-800/40 to-blue-950/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-950/40 via-blue-800/25 to-blue-950/40"></div>
         {/* Cinematic Vignette (match Landing) */}
-        <div className="absolute inset-0 bg-radial-gradient from-transparent via-transparent to-black/40"></div>
+        <div className="absolute inset-0 bg-radial-gradient from-transparent via-transparent to-black/30"></div>
 
       </div>
 
@@ -55,7 +55,7 @@ const HeroSection = () => {
           <div className="text-3xl sm:text-3xl italic md:text-4xl lg:text-6xl font-bold mb-6 font-serif">
             <TypewriterText
               texts={['Lufi & Chandra']}
-              className="bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent"
+              className="bg-gradient-to-r from-blue-300 via-blue-400 to-blue-500 bg-clip-text text-transparent"
               delay={2000}
               speed={120}
               loop={false}
@@ -79,7 +79,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 2, delay: 8, type: "spring", stiffness: 50 }}
-          className="bg-white/10 backdrop-blur-md rounded-2xl p-8 mb-8 border border-white/20"
+          className="bg-blue-900/10 backdrop-blur-[2px] rounded-2xl p-8 mb-8 border border-white/10"
         >
           <div className="grid md:grid-cols-2 gap-6 text-center">
             <div className="flex items-center justify-center space-x-3">
@@ -104,7 +104,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30, scale: 0.95 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 2, delay: 12, type: "spring" }}
-          className="space-y-4 bg-blue-900/15 backdrop-blur-[2px] rounded-xl p-6 border border-white/10"
+          className="space-y-4 bg-blue-900/10 backdrop-blur-[2px] rounded-xl p-6 border border-white/10"
         >
           <p className="text-blue-100 text-base sm:text-lg italic leading-relaxed">
             "And among His signs is that He created for you mates from among yourselves,
@@ -120,7 +120,7 @@ const HeroSection = () => {
           transition={{ duration: 2, delay: 15, type: "spring", stiffness: 80 }}
           className="mt-8"
         >
-          <div className="flex items-center justify-center space-x-2 bg-gradient-to-r from-pink-500/20 to-blue-500/20 rounded-full px-6 py-3 backdrop-blur-sm border border-white/20">
+          <div className="flex items-center justify-center space-x-2 bg-gradient-to-r from-blue-300/20 to-blue-500/20 rounded-full px-6 py-3 backdrop-blur-sm border border-white/20">
             <motion.div
               animate={{ scale: [1, 1.2, 1] }}
               transition={{ duration: 2, repeat: Infinity }}

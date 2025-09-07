@@ -32,7 +32,7 @@ const WeddingDetails = () => {
 
 
   return (
-    <section id="details" className="py-20 bg-gradient-to-br from-blue-800/70 to-blue-600/70 relative overflow-hidden">
+    <section id="details" className="py-20 bg-gradient-to-br from-blue-100 to-blue-300 relative overflow-hidden">
       {/* Floating Flowers */}
       {/* <FloatingFlowers density="medium" colors={['text-pink-300/25', 'text-purple-300/20', 'text-blue-300/15', 'text-white/12']} /> */}
 
@@ -43,9 +43,9 @@ const WeddingDetails = () => {
           alt="Wedding Details Background"
           className="w-full h-full object-cover opacity-25"
         />
-        {/* Soft blue overlay + vignette to match Hero */}
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-950/60 via-blue-800/40 to-blue-950/60"></div>
-        <div className="absolute inset-0 bg-radial-gradient from-transparent via-transparent to-black/40"></div>
+        {/* Soft blue overlay + vignette to match Hero (pastel) */}
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-950/40 via-blue-800/25 to-blue-950/40"></div>
+        <div className="absolute inset-0 bg-radial-gradient from-transparent via-transparent to-black/30"></div>
       </div>
 
       <div className="max-w-6xl mx-auto px-4 relative z-10">
@@ -57,7 +57,7 @@ const WeddingDetails = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-serif">
-            <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-300 via-blue-400 to-blue-500 bg-clip-text text-transparent">
 
               Wedding Details
             </span>

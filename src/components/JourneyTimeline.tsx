@@ -45,7 +45,7 @@ const JourneyTimeline = () => {
       title: 'Ikatan Selamanya',
       description: 'Perjalanan cinta yang indah akan mencapai puncaknya. Dua jiwa akan bersatu dalam ikatan suci pernikahan, memulai babak baru kehidupan.',
       color: 'from-blue-400/80 via-blue-500/80 to-blue-600/80',
-      image: '/UW20250811320_772a8c03c13acb3adbe4dadd207d78f7-scaled.webp',
+      image: '/6.webp',
       position: 'right'
     }
   ];
@@ -68,13 +68,13 @@ const JourneyTimeline = () => {
 
 
   return (
-    <section ref={containerRef} className="py-16 sm:py-24 md:py-32 bg-gradient-to-br from-blue-800/70 to-blue-600/70 relative overflow-hidden">
+    <section ref={containerRef} className="py-16 sm:py-24 md:py-32 bg-gradient-to-br from-blue-100 to-blue-300 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[url('/UW20250811320_772a8c03c13acb3adbe4dadd207d78f7-scaled.webp')] bg-cover bg-center opacity-5"></div>
-        {/* Soft blue overlay + vignette (match Hero) */}
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-950/50 via-blue-800/30 to-blue-950/50"></div>
-        <div className="absolute inset-0 bg-radial-gradient from-transparent via-transparent to-black/40"></div>
+        <div className="absolute inset-0 bg-[url('/6.webp')] bg-cover bg-center opacity-5"></div>
+        {/* Soft blue overlay + vignette (pastel) */}
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-400/30 via-blue-500/50 to-blue-950/35"></div>
+        <div className="absolute inset-0 bg-radial-gradient from-transparent via-transparent to-black/25"></div>
       </div>
 
 
@@ -108,7 +108,7 @@ const JourneyTimeline = () => {
             </motion.div> */}
 
             <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 sm:mb-6 font-serif leading-tight">
-              <span className="bg-gradient-to-r from-blue-300 via-blue-400 to-blue-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-300/50 via-blue-400/50 to-blue-500/50 bg-clip-text text-transparent">
                 Our Journey
               </span>
             </h2>

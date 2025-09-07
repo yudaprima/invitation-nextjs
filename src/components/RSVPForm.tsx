@@ -51,9 +51,9 @@ const RSVPForm = () => {
 
 
   return (
-    <section id="rsvp" className="py-20 bg-gradient-to-br from-blue-800/70 to-blue-600/70 relative overflow-hidden">
+    <section id="rsvp" className="py-20 bg-gradient-to-br from-blue-100 to-blue-300 relative overflow-hidden">
       {/* Floating Flowers */}
-      {/* <FloatingFlowers density="light" colors={['text-pink-300/25', 'text-purple-300/20', 'text-blue-300/15', 'text-white/12']} /> */}
+      {/* <FloatingFlowers density="light" colors={['text-pink-300/25', 'text-purple-300/20', 'text-blue-300/15', 'text-blue-700/12']} /> */}
 
       <div className="max-w-2xl mx-auto px-4 relative z-10">
         <motion.div
@@ -64,12 +64,12 @@ const RSVPForm = () => {
           className="text-center mb-12"
         >
           {/* <Heart className="h-12 w-12 text-pink-400 mx-auto mb-6" /> */}
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-serif">
-            <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-4 font-serif">
+            <span className="bg-gradient-to-r from-blue-300 via-blue-400 to-blue-500 bg-clip-text text-transparent">
               RSVP
             </span>
           </h2>
-          <p className="text-blue-200 text-lg">
+          <p className="text-blue-500 text-lg">
             Mohon isi singkat nama, alamat (opsional), dan jumlah tamu. Klik Send RSVP untuk konfirmasi via WhatsApp.
           </p>
         </motion.div>
@@ -84,11 +84,11 @@ const RSVPForm = () => {
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Name */}
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
+              <label htmlFor="name" className="block text-sm font-medium text-blue-700 mb-2">
                 Nama Lengkap *
               </label>
               <div className="relative">
-                <User className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
+                <User className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-black" />
                 <input
                   type="text"
                   id="name"
@@ -96,7 +96,7 @@ const RSVPForm = () => {
                   required
                   value={formData.name}
                   onChange={handleInputChange}
-                  className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/30 rounded-lg focus:ring-2 focus:ring-pink-400 focus:border-transparent transition-colors duration-200 text-white placeholder-blue-200"
+                  className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/30 rounded-lg focus:ring-2 focus:ring-pink-400 focus:border-transparent transition-colors duration-200 text-blue-700 placeholder-blue-200"
                   placeholder="Tulis nama lengkap"
                 />
               </div>
@@ -104,18 +104,18 @@ const RSVPForm = () => {
 
             {/* Address (optional) */}
             <div>
-              <label htmlFor="address" className="block text-sm font-medium text-white mb-2">
+              <label htmlFor="address" className="block text-sm font-medium text-blue-700 mb-2">
                 Alamat (Opsional)
               </label>
               <div className="relative">
-                <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
+                <MapPin className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-blue-600" />
                 <input
                   type="text"
                   id="address"
                   name="address"
                   value={formData.address}
                   onChange={handleInputChange}
-                  className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/30 rounded-lg focus:ring-2 focus:ring-pink-400 focus:border-transparent transition-colors duration-200 text-white placeholder-blue-200"
+                  className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/30 rounded-lg focus:ring-2 focus:ring-pink-400 focus:border-transparent transition-colors duration-200 text-blue-700 placeholder-blue-200"
                   placeholder="Tulis alamat (opsional)"
                 />
               </div>
@@ -123,17 +123,17 @@ const RSVPForm = () => {
 
             {/* Number of Guests */}
             <div>
-              <label htmlFor="guests" className="block text-sm font-medium text-white mb-2">
+              <label htmlFor="guests" className="block text-sm font-medium text-blue-700 mb-2">
                 Jumlah Tamu (termasuk Anda)
               </label>
               <div className="relative">
-                <Users className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
+                <Users className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-blue-600" />
                 <select
                   id="guests"
                   name="guests"
                   value={formData.guests}
                   onChange={handleInputChange}
-                  className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/30 rounded-lg focus:ring-2 focus:ring-pink-400 focus:border-transparent transition-colors duration-200 text-white"
+                  className="w-full pl-10 pr-4 py-3 bg-white/10 border border-white/30 rounded-lg focus:ring-2 focus:ring-pink-400 focus:border-transparent transition-colors duration-200 text-blue-700"
                 >
                   {[1, 2, 3, 4, 5].map(num => (
                     <option key={num} value={num} className="text-black">
@@ -150,7 +150,7 @@ const RSVPForm = () => {
               disabled={!formData.name}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="w-full btn-brand text-white py-4 px-6 rounded-lg font-semibold text-lg transition-colors duration-200 flex items-center justify-center space-x-2"
+              className="w-full btn-brand text-blue-700 py-4 px-6 rounded-lg font-semibold text-lg transition-colors duration-200 flex items-center justify-center space-x-2"
             >
               <Send className="h-5 w-5" />
               <span>Send RSVP (WhatsApp)</span>
@@ -162,14 +162,14 @@ const RSVPForm = () => {
             <div className="bg-white/10 border border-white/20 rounded-lg p-4">
               <div className="flex items-center justify-between gap-3">
                 <div>
-                  <p className="text-sm">Gift (Transfer)</p>
-                  <p className="font-semibold text-white">BCA 8610180982</p>
-                  <p className="text-sm">a.n. Aprilia Evita W</p>
+                  <p className="text-sm text-blue-600">Gift (Transfer)</p>
+                  <p className="font-semibold text-blue-700">BCA 8610180982</p>
+                  <p className="text-sm text-blue-600">a.n. Aprilia Evita W</p>
                 </div>
                 <button
                   type="button"
                   onClick={handleCopyRekening}
-                  className="px-3 py-2 rounded-md bg-blue-600 hover:bg-blue-700 text-white text-sm"
+                  className="px-3 py-2 rounded-md bg-blue-400 hover:bg-blue-700 text-white text-sm"
                 >
                   {copied ? 'Tersalin' : 'Salin' }
                 </button>

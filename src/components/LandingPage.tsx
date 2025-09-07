@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { Heart, Calendar } from 'lucide-react';
+import { Calendar } from 'lucide-react';
 
 interface LandingPageProps {
   onEnter: () => void;
@@ -17,7 +17,7 @@ const LandingPage = ({ onEnter }: LandingPageProps) => {
   };
 
   return (
-    <div className="min-h-screen relative overflow-x-hidden bg-gradient-to-br from-blue-800 to-blue-600">
+    <div className="min-h-screen relative overflow-x-hidden bg-gradient-to-br from-blue-100 to-blue-300">
 
 
 
@@ -26,7 +26,7 @@ const LandingPage = ({ onEnter }: LandingPageProps) => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/UW20250811320_cce0511807b44a0bd756661093c6abc4-scaled.webp"
+          src="/landingpage.webp"
           alt="Wedding Background"
           fill
           className="object-cover opacity-30"
@@ -35,17 +35,17 @@ const LandingPage = ({ onEnter }: LandingPageProps) => {
         {/* main gradient is on wrapper now; remove extra overlay */}
         {/* Soft blue overlay to improve readability */}
         {/* Subtle soft-blue overlay to darken image for readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-950/60 via-blue-800/40 to-blue-950/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-950/40 via-blue-800/25 to-blue-950/40"></div>
         {/* Cinematic Vignette (match Landing) */}
-        <div className="absolute inset-0 bg-radial-gradient from-transparent via-transparent to-black/40"></div>
+        <div className="absolute inset-0 bg-radial-gradient from-transparent via-transparent to-black/30"></div>
       </div>
 
       {/* CSS-based Floating Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-10 left-10 w-2 h-2 bg-white/30 rounded-full animate-float"></div>
         <div className="absolute top-20 right-20 w-1 h-1 bg-blue-300/40 rounded-full animate-float animation-delay-200"></div>
-        <div className="absolute top-40 left-1/4 w-1.5 h-1.5 bg-pink-300/30 rounded-full animate-float animation-delay-400"></div>
-        <div className="absolute top-60 right-1/3 w-2 h-2 bg-purple-300/30 rounded-full animate-float animation-delay-600"></div>
+        <div className="absolute top-40 left-1/4 w-1.5 h-1.5 bg-blue-200/30 rounded-full animate-float animation-delay-400"></div>
+        <div className="absolute top-60 right-1/3 w-2 h-2 bg-blue-300/25 rounded-full animate-float animation-delay-600"></div>
         <div className="absolute bottom-40 left-20 w-1 h-1 bg-white/40 rounded-full animate-float"></div>
         <div className="absolute bottom-60 right-10 w-1.5 h-1.5 bg-blue-300/30 rounded-full animate-float animation-delay-200"></div>
       </div>
@@ -140,7 +140,7 @@ const LandingPage = ({ onEnter }: LandingPageProps) => {
               onClick={handleEnterWithMusic}
               whileHover={{
                 scale: 1.15,
-                boxShadow: "0 0 60px rgba(255, 255, 255, 0.8), 0 0 100px rgba(236, 72, 153, 0.3)",
+                boxShadow: "0 0 60px rgba(255, 255, 255, 0.8), 0 0 100px rgba(59, 130, 246, 0.3)",
                 textShadow: "0 0 30px rgba(255, 255, 255, 1)"
               }}
               whileTap={{ scale: 0.95 }}
@@ -154,10 +154,10 @@ const LandingPage = ({ onEnter }: LandingPageProps) => {
               transition={{
                 boxShadow: { duration: 3, repeat: Infinity, ease: "easeInOut" }
               }}
-              className="relative flex items-center justify-center bg-gradient-to-r from-white via-pink-50 to-white text-blue-900 px-8 sm:px-12 md:px-16 lg:px-20 py-4 sm:py-5 md:py-6 rounded-full font-bold text-lg sm:text-xl md:text-2xl shadow-2xl transition-all duration-500 border-2 border-white/40 overflow-hidden group w-full max-w-sm sm:max-w-md mx-auto text-center"
+              className="relative flex items-center justify-center bg-gradient-to-r from-white via-blue-50 to-white text-blue-900 px-8 sm:px-12 md:px-16 lg:px-20 py-4 sm:py-5 md:py-6 rounded-full font-bold text-lg sm:text-xl md:text-2xl shadow-2xl transition-all duration-500 border-2 border-white/40 overflow-hidden group w-full max-w-sm sm:max-w-md mx-auto text-center"
             >
               {/* Button Glow Effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-pink-200/30 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-200/30 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
 
               {/* Sparkle Effect */}
               <div className="absolute inset-0">
