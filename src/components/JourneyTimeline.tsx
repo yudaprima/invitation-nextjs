@@ -84,13 +84,13 @@ const JourneyTimeline = () => {
 
 
       {/* Floating Flowers */}
-      <FloatingFlowers
+      {/* <FloatingFlowers
         density="light"
         colors={['text-pink-300/15', 'text-purple-300/15', 'text-blue-300/10', 'text-white/10']}
         distribution="center"
         edgeElements={false}
         repeatDelayScale={0.5}
-      />
+      /> */}
 
       {/* Container */}
       <motion.div>

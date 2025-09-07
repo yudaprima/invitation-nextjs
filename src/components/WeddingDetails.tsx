@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { Calendar, Clock, MapPin, Phone, Mail, Car } from 'lucide-react';
-import FloatingFlowers from './FloatingFlowers';
 
 const WeddingDetails = () => {
   const events = [
@@ -41,10 +40,23 @@ const WeddingDetails = () => {
     },
   ];
 
+
   return (
     <section id="details" className="py-20 bg-gradient-to-br from-blue-800/70 to-blue-600/70 relative overflow-hidden">
       {/* Floating Flowers */}
-      <FloatingFlowers density="medium" colors={['text-pink-300/25', 'text-purple-300/20', 'text-blue-300/15', 'text-white/12']} />
+      {/* <FloatingFlowers density="medium" colors={['text-pink-300/25', 'text-purple-300/20', 'text-blue-300/15', 'text-white/12']} /> */}
+
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/weding.webp"
+          alt="Wedding Details Background"
+          className="w-full h-full object-cover opacity-25"
+        />
+        {/* Soft blue overlay + vignette to match Hero */}
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-950/60 via-blue-800/40 to-blue-950/60"></div>
+        <div className="absolute inset-0 bg-radial-gradient from-transparent via-transparent to-black/40"></div>
+      </div>
 
       <div className="max-w-6xl mx-auto px-4 relative z-10">
         <motion.div
@@ -56,6 +68,7 @@ const WeddingDetails = () => {
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-serif">
             <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
+
               Wedding Details
             </span>
           </h2>
@@ -143,7 +156,7 @@ const WeddingDetails = () => {
             Contact Information
           </h3>
           <div className="grid md:grid-cols-2 gap-6">
-            {contactInfo.map((contact, index) => (
+            {contactInfo.map((contact) => (
               <div key={contact.name} className="text-center">
                 <h4 className="text-lg font-semibold text-gray-900 mb-2">
                   {contact.name}

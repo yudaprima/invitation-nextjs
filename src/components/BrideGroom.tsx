@@ -9,7 +9,7 @@ const BrideGroom = () => {
   return (
     <section className="py-20 bg-gradient-to-br from-blue-800/70 to-blue-600/70 relative overflow-hidden">
       {/* Floating Flowers */}
-      <FloatingFlowers density="light" colors={['text-pink-300/20', 'text-purple-300/15', 'text-blue-300/15', 'text-white/10']} />
+      {/* <FloatingFlowers density="light" colors={['text-pink-300/20', 'text-purple-300/15', 'text-blue-300/15', 'text-white/10']} /> */}
 
       <div className="max-w-6xl mx-auto px-4 relative z-10">
         {/* Section Header */}
@@ -20,14 +20,14 @@ const BrideGroom = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 mb-8 border border-white/20">
+          {/* <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 mb-8 border border-white/20">
             <p className="text-lg md:text-xl text-white leading-relaxed mb-4 font-serif italic">
               "Dan segala sesuatu Kami ciptakan berpasang-pasangan agar kamu mengingat (kebesaran Allah)"
             </p>
             <p className="text-blue-200 text-sm">
               - QS. Adz-Dzariyat: 49
             </p>
-          </div>
+          </div> */}
           {/* <Heart className="h-12 w-12 text-pink-400 mx-auto mb-6" /> */}
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 font-serif">
             <span className="bg-gradient-to-r italic from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent">
@@ -51,7 +51,7 @@ const BrideGroom = () => {
             <div className="relative mb-8">
               <div className="w-80 h-80 mx-auto relative rounded-full overflow-hidden shadow-2xl border-8 border-white">
                 <Image
-                  src="/UW20250811320_01cb7f886f89e9d5028ccd4170e05c45-e1755759503178.webp"
+                  src="/lufi.webp"
                   alt="Lufi - The Bride"
                   fill
                   className="object-cover"
@@ -100,7 +100,7 @@ const BrideGroom = () => {
             <div className="relative mb-8">
               <div className="w-80 h-80 mx-auto relative rounded-full overflow-hidden shadow-2xl border-8 border-white">
                 <Image
-                  src="/UW20250811320_15d89cbb31158d13b4596f61384ec86f.webp"
+                  src="/candra.webp"
                   alt="Chandra - The Groom"
                   fill
                   className="object-cover"

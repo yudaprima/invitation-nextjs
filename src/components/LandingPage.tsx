@@ -83,7 +83,7 @@ const LandingPage = ({ onEnter }: LandingPageProps) => {
           </motion.div>
 
           {/* Surah Ar-Rum 21 */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.6 }}
@@ -95,7 +95,7 @@ const LandingPage = ({ onEnter }: LandingPageProps) => {
             <p className="text-white/70 text-xs sm:text-sm text-center">
               - QS. Ar-Rum: 21
             </p>
-          </motion.div>
+          </motion.div> */}
 
           {/* Couple Names */}
           <motion.div

@@ -53,7 +53,7 @@ const RSVPForm = () => {
   return (
     <section id="rsvp" className="py-20 bg-gradient-to-br from-blue-800/70 to-blue-600/70 relative overflow-hidden">
       {/* Floating Flowers */}
-      <FloatingFlowers density="light" colors={['text-pink-300/25', 'text-purple-300/20', 'text-blue-300/15', 'text-white/12']} />
+      {/* <FloatingFlowers density="light" colors={['text-pink-300/25', 'text-purple-300/20', 'text-blue-300/15', 'text-white/12']} /> */}
 
       <div className="max-w-2xl mx-auto px-4 relative z-10">
         <motion.div

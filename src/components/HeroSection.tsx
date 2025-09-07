@@ -26,13 +26,13 @@ const HeroSection = () => {
       </div>
 
       {/* Floating Flowers */}
-      <FloatingFlowers
+      {/* <FloatingFlowers
         density="heavy"
         colors={['text-pink-300/40', 'text-purple-300/35', 'text-blue-300/30', 'text-white/25']}
         distribution="center"
         edgeElements={false}
         repeatDelayScale={0.6}
-      />
+      /> */}
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
@@ -93,7 +93,7 @@ const HeroSection = () => {
               <MapPin className="h-6 w-6 text-blue-200" />
               <div>
                 <p className="text-blue-100 text-sm">Location</p>
-                <p className="text-white text-lg font-semibold">Yogyakarta, Indonesia</p>
+                <p className="text-white text-lg font-semibold">Baliantoro Villa, Yogyakarta</p>
               </div>
             </div>
           </div>

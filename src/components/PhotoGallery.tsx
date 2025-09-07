@@ -11,42 +11,42 @@ const PhotoGallery = () => {
 
   const photos = [
     {
-      src: '/UW20250811320_772a8c03c13acb3adbe4dadd207d78f7-scaled.webp',
+      src: '/1.webp',
       alt: 'Wedding Photo 1',
       category: 'Engagement'
     },
     {
-      src: '/UW20250811320_01cb7f886f89e9d5028ccd4170e05c45-e1755759503178.webp',
+      src: '/2.webp',
       alt: 'Wedding Photo 2',
       category: 'Pre-wedding'
     },
     {
-      src: '/UW20250811320_10a5e6a802736d6b315019933d8c0444-scaled.webp',
+      src: '/3.webp',
       alt: 'Wedding Photo 3',
       category: 'Engagement'
     },
     {
-      src: '/UW20250811320_15d89cbb31158d13b4596f61384ec86f.webp',
+      src: '/5.webp',
       alt: 'Wedding Photo 4',
       category: 'Pre-wedding'
     },
     {
-      src: '/UW20250811320_695675eac3dbf79f3d6969645fa9298b-e1755759444680.webp',
+      src: '/4.webp',
       alt: 'Wedding Photo 5',
       category: 'Engagement'
     },
     {
-      src: '/UW20250811320_7011c01d5771640c3a44328ce10b6425-scaled.webp',
+      src: '/6.webp',
       alt: 'Wedding Photo 6',
       category: 'Pre-wedding'
     },
     {
-      src: '/UW20250811320_76c4c8d8f194f5e7399fe379a3016eb8-scaled.webp',
+      src: '/7.webp',
       alt: 'Wedding Photo 7',
       category: 'Engagement'
     },
     {
-      src: '/UW20250811320_80f0d33a0084128c02ae339920568617.webp',
+      src: '/8.webp',
       alt: 'Wedding Photo 8',
       category: 'Pre-wedding'
     },
@@ -75,7 +75,7 @@ const PhotoGallery = () => {
   return (
     <section id="gallery" className="py-20 bg-gradient-to-br from-blue-800/70 to-blue-600/70 relative overflow-hidden">
       {/* Floating Flowers */}
-      <FloatingFlowers density="medium" colors={['text-pink-300/30', 'text-purple-300/25', 'text-blue-300/20', 'text-white/15']} />
+      {/* <FloatingFlowers density="medium" colors={['text-pink-300/30', 'text-purple-300/25', 'text-blue-300/20', 'text-white/15']} /> */}
 
       <div className="max-w-6xl mx-auto px-4 relative z-10">
         <motion.div
