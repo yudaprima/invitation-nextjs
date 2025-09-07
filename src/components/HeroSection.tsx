@@ -66,7 +66,7 @@ const HeroSection = () => {
           <div className="text-lg sm:text-xl md:text-2xl text-blue-100 mb-8">
             <TypewriterText
               texts={["we’re excited to have you in our wedding!", "Join us in celebration!", "A love story begins..."]}
-              className="text-blue-200"
+              className="text-white/85"
               delay={4500}
               speed={80}
               pauseBetween={3000}
@@ -85,14 +85,14 @@ const HeroSection = () => {
             <div className="flex items-center justify-center space-x-3">
               <Calendar className="h-6 w-6 text-blue-200" />
               <div>
-                <p className="text-blue-100 text-sm">Wedding Date</p>
+                <p className="text-white/90 text-sm">Wedding Date</p>
                 <p className="text-white text-lg font-semibold">21 September 2025</p>
               </div>
             </div>
             <div className="flex items-center justify-center space-x-3">
               <MapPin className="h-6 w-6 text-blue-200" />
               <div>
-                <p className="text-blue-100 text-sm">Location</p>
+                <p className="text-white/90 text-sm">Location</p>
                 <p className="text-white text-lg font-semibold">Baliantoro Villa, Yogyakarta</p>
               </div>
             </div>
@@ -106,11 +106,11 @@ const HeroSection = () => {
           transition={{ duration: 2, delay: 12, type: "spring" }}
           className="space-y-4 bg-blue-900/10 backdrop-blur-[2px] rounded-xl p-6 border border-white/10"
         >
-          <p className="text-blue-100 text-base sm:text-lg italic leading-relaxed">
+          <p className="text-white/90 text-base sm:text-lg italic leading-relaxed">
             "And among His signs is that He created for you mates from among yourselves,
             that you may dwell in tranquility with them, and He has put love and mercy between your hearts."
           </p>
-          <p className="text-blue-200 text-sm">- Quran 30:21</p>
+          <p className="text-white/70 text-sm">- Quran 30:21</p>
         </motion.div>
 
         {/* Welcome message with even more delay */}

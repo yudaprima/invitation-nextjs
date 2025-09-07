@@ -34,7 +34,7 @@ const BrideGroom = () => {
               Bride & Groom
             </span>
           </h2>
-          <p className="text-blue-400 text-lg max-w-2xl mx-auto">
+          <p className="text-white/85 text-lg max-w-2xl mx-auto">
             Dua insan yang dipersatukan dalam ikatan suci pernikahan
           </p>
         </motion.div>
@@ -62,7 +62,7 @@ const BrideGroom = () => {
               </div> */}
             </div>
 
-            <div className="bg-white rounded-2xl shadow-xl p-8">
+            <div className="bg-white/95 rounded-2xl shadow-xl p-8">
               <h3 className="text-3xl font-bold text-blue-900 mb-2 font-serif">
                 Lufi
               </h3>
@@ -82,7 +82,7 @@ const BrideGroom = () => {
               </div>
 
               <div className="mt-6 pt-6 border-t border-gray-200">
-                <p className="text-blue-600 italic text-sm">
+                <p className="text-blue-800 italic text-sm">
                   "Seorang wanita yang lembut hati dan penuh kasih sayang"
                 </p>
               </div>
@@ -111,7 +111,7 @@ const BrideGroom = () => {
               </div> */}
             </div>
 
-            <div className="bg-white rounded-2xl shadow-xl p-8">
+            <div className="bg-white/95 rounded-2xl shadow-xl p-8">
               <h3 className="text-3xl font-bold text-blue-900 mb-2 font-serif">
                 Chandra
               </h3>
@@ -131,7 +131,7 @@ const BrideGroom = () => {
               </div>
 
               <div className="mt-6 pt-6 border-t border-gray-200">
-                <p className="text-blue-600 italic text-sm">
+                <p className="text-blue-800 italic text-sm">
                   "Seorang pria yang bertanggung jawab dan penuh dedikasi"
                 </p>
               </div>

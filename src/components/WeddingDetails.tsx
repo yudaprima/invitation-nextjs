@@ -62,7 +62,7 @@ const WeddingDetails = () => {
               Wedding Details
             </span>
           </h2>
-          <p className="text-blue-200 text-lg max-w-2xl mx-auto">
+          <p className="text-white/85 text-lg max-w-2xl mx-auto">
             We would be honored to have you join us on our special day.
             Here are all the details you need to know.
           </p>
@@ -83,23 +83,23 @@ const WeddingDetails = () => {
                 <h3 className="text-2xl font-bold text-white mb-2">
                   {event.title}
                 </h3>
-                <p className="text-blue-200">{event.description}</p>
+                <p className="text-white/85">{event.description}</p>
               </div>
 
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Calendar className="h-5 w-5 text-blue-500" />
-                  <span className="text-blue-100">{event.date}</span>
+                  <span className="text-white/90">{event.date}</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Clock className="h-5 w-5 text-blue-500" />
-                  <span className="text-blue-100">{event.time}</span>
+                  <span className="text-white/90">{event.time}</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <MapPin className="h-5 w-5 text-blue-500 mt-1" />
                   <div>
                     <p className="text-white font-semibold">{event.location}</p>
-                    <p className="text-blue-200 text-sm">{event.address}</p>
+                    <p className="text-white/80 text-sm">{event.address}</p>
                   </div>
                 </div>
               </div>

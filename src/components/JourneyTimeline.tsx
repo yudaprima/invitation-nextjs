@@ -108,11 +108,11 @@ const JourneyTimeline = () => {
             </motion.div> */}
 
             <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-4 sm:mb-6 font-serif leading-tight">
-              <span className="bg-gradient-to-r from-blue-300/50 via-blue-400/50 to-blue-500/50 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-300 via-blue-400 to-blue-500 bg-clip-text text-transparent">
                 Our Journey
               </span>
             </h2>
-            <p className="text-base sm:text-lg md:text-xl text-blue-200 max-w-3xl mx-auto leading-relaxed px-4">
+            <p className="text-base sm:text-lg md:text-xl text-white/85 max-w-3xl mx-auto leading-relaxed px-4">
               Sebuah perjalanan cinta yang dimulai dari takdir, tumbuh dengan kasih sayang,
               dan akan bermuara pada ikatan suci selamanya
             </p>
@@ -209,7 +209,7 @@ const JourneyTimeline = () => {
                       {step.title}
                     </h3>
 
-                    <p className="text-blue-100 leading-relaxed text-sm sm:text-base md:text-lg mb-4 sm:mb-6">
+                    <p className="text-white/85 leading-relaxed text-sm sm:text-base md:text-lg mb-4 sm:mb-6">
                       {step.description}
                     </p>
 
@@ -261,7 +261,7 @@ const JourneyTimeline = () => {
             <h3 className="text-3xl font-bold text-white mb-4 font-serif">
               Dan Perjalanan Berlanjut...
             </h3> */}
-            <p className="text-xl text-blue-200 max-w-2xl mx-auto">
+            <p className="text-xl text-white/85 max-w-2xl mx-auto">
               Setiap akhir adalah awal yang baru. Perjalanan cinta kami akan terus berlanjut
               dalam ikatan suci pernikahan, menuju kebahagiaan yang abadi.
             </p>

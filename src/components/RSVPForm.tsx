@@ -65,11 +65,11 @@ const RSVPForm = () => {
         >
           {/* <Heart className="h-12 w-12 text-pink-400 mx-auto mb-6" /> */}
           <h2 className="text-3xl md:text-4xl font-bold text-blue-700 mb-4 font-serif">
-            <span className="bg-gradient-to-r from-blue-300 via-blue-400 to-blue-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 bg-clip-text text-transparent">
               RSVP
             </span>
           </h2>
-          <p className="text-blue-500 text-lg">
+          <p className="text-blue-900 text-lg">
             Mohon isi singkat nama, alamat (opsional), dan jumlah tamu. Klik Send RSVP untuk konfirmasi via WhatsApp.
           </p>
         </motion.div>
@@ -158,7 +158,7 @@ const RSVPForm = () => {
           </form>
 
           {/* Gift */}
-          <div className="mt-6 space-y-4 text-blue-100">
+          <div className="mt-6 space-y-4 text-blue-900">
             <div className="bg-white/10 border border-white/20 rounded-lg p-4">
               <div className="flex items-center justify-between gap-3">
                 <div>
